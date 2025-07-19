@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  api1:
+    container_name: api1
+    build:
+      context: ./api1
+      dockerfile: Dockerfile
+    ports:
+      - 3000:3000
+    restart : always
+    networks:
+      - peemsornfight-networks
+  
+  api2:
+    container_name: api2
+    build:
+      context: ./api2
+      dockerfile: Dockerfile
+    ports:
+      - 4000:4000
+    restart : always
+    networks:
+      - peemsornfight-networks
+
+
+networks:
+  peemsornfight-networks:
+    driver: bridge
