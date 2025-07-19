@@ -13,11 +13,15 @@
 ## Deployment
 
 To deploy this project run
-
+First of All : Open Your Terminal then go to your working space and clone this project.
 ```bash
-  git clone https://github.com/FightFK/aiforthai .
+  git clone https://github.com/FightFK/aiforthai
 ```
-
+then
+```bash
+  cd aiforthai
+```
+then
 ```bash
   docker compose up -d
 ```
