@@ -15,6 +15,10 @@
 To deploy this project run
 
 ```bash
+  git clone https://github.com/FightFK/aiforthai .
+```
+
+```bash
   docker compose up -d
 ```
 
